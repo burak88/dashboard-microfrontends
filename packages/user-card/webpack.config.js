@@ -38,7 +38,7 @@ module.exports = {
       name: 'userCard',
       filename: 'remoteEntry.js',
       exposes: {
-        './UserCardApp': './src/UserCardApp',
+        './UserCard': './src/components/UserCard',
       },
       shared: {
         react: { singleton: true, eager: true },

@@ -1,11 +1,11 @@
 import React from "react";
-import ContentBarApp from "./ContentBarApp";
+import ContentBar from "./components/ContentBar";
+import { mockContent } from "./data/mockData";
 
 const App = () => {
   return (
     <div>
-      <h1>Content Bar Standalone</h1>
-      <ContentBarApp />
+        <ContentBar content={mockContent} />
     </div>
   );
 };

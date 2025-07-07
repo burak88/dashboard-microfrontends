@@ -11,6 +11,9 @@ module.exports = {
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
+    client: {
+      overlay: true, // veya false yaparak test edebilirsin
+    },
   },
   resolve: {
     extensions: ['.js', '.jsx'],

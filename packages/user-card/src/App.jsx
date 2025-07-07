@@ -1,11 +1,12 @@
 import React from 'react';
-import UserCardApp from './UserCardApp';
+import UserCard from './components/UserCard';
+import { mockUser } from "./data/mockData"
 
 const App = () => {
   return (
     <div>
       <h1>User Card Standalone</h1>
-      <UserCardApp />
+        <UserCard user={mockUser} />
     </div>
   );
 };

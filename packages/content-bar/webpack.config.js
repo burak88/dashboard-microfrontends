@@ -38,7 +38,7 @@ module.exports = {
       name: 'contentBar',
       filename: 'remoteEntry.js',
       exposes: {
-        './ContentBarApp': './src/ContentBarApp',
+        './ContentBar': './src/components/ContentBar',
       },
       shared: {
         react: { singleton: true, eager: true },
