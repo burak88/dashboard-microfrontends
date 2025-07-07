@@ -1,0 +1,21 @@
+{
+  "name": "dashboard-microfrontends",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "install:all": "npm install && cd packages/shell && npm install && cd ../user-card && npm install && cd ../content-bar && npm install",
+    "dev": "concurrently \"npm run dev:user-card\" \"npm run dev:content-bar\" \"npm run dev:shell\"",
+    "dev:shell": "cd packages/shell && npm start",
+    "dev:user-card": "cd packages/user-card && npm start",
+    "dev:content-bar": "cd packages/content-bar && npm start",
+    "build": "npm run build:user-card && npm run build:content-bar && npm run build:shell",
+    "build:shell": "cd packages/shell && npm run build",
+    "build:user-card": "cd packages/user-card && npm run build",
+    "build:content-bar": "cd packages/content-bar && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
