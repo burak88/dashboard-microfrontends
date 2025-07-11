@@ -1,7 +1,6 @@
 import React from "react";
-import ContentBar from "./components/ContentBar";
 import { mockContent } from "./data/mockData";
-
+import ContentBar from "./components/ContentBar";
 const App = () => {
   return (
     <div>

@@ -1,5 +1,6 @@
+import { ContentItemType } from "../types";
 
-export const mockContent = [
+export const mockContent : ContentItemType[] = [
   {
     id: 1,
     title: "Building Scalable React Applications",
